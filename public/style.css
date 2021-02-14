@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    padding: 10px 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px rgb(182, 182, 182);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.profile_name{
+    margin-left: 10px;
+}
+.profile_div{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+.profile_div img{
+    height: 100%;
+    width: 100%;
+}
+
+.sms_area{
+    height: 85vh;
+    padding: 150px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.sms_area::-webkit-scrollbar{
+    display: none;
+}
+.incoming{
+    position: relative;
+    margin-bottom: 50px;
+    left: 0;
+    width: 40%;
+    min-width: 300px;
+    background-color: rgb(130, 145, 0);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+.outgoing{
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: auto;
+    right: 0;
+    min-width: 300px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    padding:10px;
+    color: #fff;
+    width: 40%;
+}
+.message h3{
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    background-color: rgba(214, 214, 214, 0);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #000;
+}
+.text_area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+textarea{
+    width: 95%;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 1px 5px rgb(148, 148, 148);
+    outline: none;
+    padding: 15px 30px 0 30px;
+    height: auto;
+    background-color: rgb(242, 242, 242);
+}
+textarea::-webkit-resizer{
+    display: none;
