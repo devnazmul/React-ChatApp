@@ -59,10 +59,10 @@ body{
     left: 0;
     width: 40%;
     min-width: 300px;
-    background-color: rgb(130, 145, 0);
+    background-color: rgb(0, 250, 225);
     border-radius: 10px;
     padding: 10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .outgoing{
     position: relative;
@@ -73,7 +73,7 @@ body{
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
     padding:10px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     width: 40%;
 }
 .message h3{
@@ -104,3 +104,4 @@ textarea{
 }
 textarea::-webkit-resizer{
     display: none;
+}
